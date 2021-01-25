@@ -16,9 +16,9 @@ class FragmentFirst : Fragment() {
         val switchButton = view.findViewById<View>(R.id.SwitchButton) as Button
 
         switchButton.setOnClickListener {
-            val fragment2 = FragmentSecond() //初始化接著要switch的fragment
-            transaction.replace(R.id.center, fragment2) //switch　framgent
-            transaction.commit() //使framgent變化生效
+            val fragment2 = FragmentSecond()
+            transaction.replace(R.id.center, fragment2)
+            transaction.commit()
         }
         return view
     }

@@ -10,14 +10,14 @@ class MainActivity : AppCompatActivity() {
     private var manager: FragmentManager? = null
     private var transaction: FragmentTransaction? = null
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState) //難以維護
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         //初始化先到FragmentFirst
-        manager = supportFragmentManager //取得activity內所有的fragment
-        transaction = manager!!.beginTransaction() //初始化manger的變化
-        val fragment1 = FragmentFirst() //初始化接著要switch的fragment
-        transaction!!.replace(R.id.center, fragment1) //switch　framgent
-        transaction!!.commit() //使framgent變化生效
+        manager = supportFragmentManager
+        transaction = manager!!.beginTransaction()
+        val fragment1 = FragmentFirst()
+        transaction!!.replace(R.id.center, fragment1)
+        transaction!!.commit()
     }
 }
