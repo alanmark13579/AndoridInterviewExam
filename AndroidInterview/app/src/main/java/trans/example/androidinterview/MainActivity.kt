@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         //初始化先到FragmentFirst
         manager = supportFragmentManager
         transaction = manager!!.beginTransaction()
